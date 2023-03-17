@@ -1,0 +1,148 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    background:#ffffff;
+}
+/*body {
+    margin: 0px 30px 0px 30px;
+}*/
+/* ESTA ES LA CABECERA*/
+.cabecera{
+	overflow: hidden;
+
+    text-shadow: 2px 1px 4px rgba(28,110,164,0.61);
+
+}
+.cabecera img{
+	display: block;
+	padding-top: 10px;
+	margin: auto;
+    height: 130px;
+    width: 130px;
+}
+
+.cabecera h1{
+	text-align: center;
+	font-size: 35px;
+	padding: 0px;
+	margin: 5px;	
+}
+.cabecera h3{
+	text-align: center;
+	margin-top: 0px;
+}
+
+/* AQUI COMIENZA EL MENU*/
+
+.menu{
+    background: #336ca5;
+	overflow: hidden;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.58); 
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.58);
+	margin: 5px;
+}
+.menu ul{
+    background: #336ca5;
+}
+.menu ul li{
+	list-style: none;
+	display: inline;
+}
+
+.menu ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	padding: 5px;
+    background: #336ca5;
+	
+}
+.menu ul li a:hover{
+	color: #F69F2C;
+}
+
+/*Cuerpo*/
+
+/* AQUI EMPIEZA ARTICULO 1 */
+
+.iconos{
+	overflow: hidden;
+	margin:20px 0px ;
+}
+
+.iconos div{
+	width: 24%;
+	float: left;
+	overflow: hidden;
+}
+
+.iconos div img{
+	width: 40%;
+	display: block;
+	margin: auto;
+}
+.iconos2 div p{
+	text-align: center;
+	color: cornflowerblue;
+}
+.iconos2{
+	overflow: hidden;
+	margin:20px 0px ;
+}
+
+.iconos2 div{
+	width: 40%;
+	float: left;
+	overflow: hidden;
+}
+
+.iconos2 div img{
+	width: 25%;
+	display: block;
+	margin: auto;
+}
+.iconos div p{
+	text-align: center;
+	color: cornflowerblue;
+}
+/* AQUI EMPIEZA ARTICULO 2*/
+.slider{
+	margin: 30px;
+}
+.slider img{
+	width: 70%;
+	display: block;
+	margin: auto;
+}
+.slider h3{
+	text-align: center;
+	color: #336ca5;
+	margin-top: 30px;
+
+}
+
+.subtitulos {
+    background-color: #5589c4; 
+    padding-left: 20px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.58); 
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.58);
+    font-size: small;
+}
+.subtitulos h2 {
+    background: #5589c4; 
+}
+.cuerpos {
+     
+    padding-left: 20px;
+}
+/* PIE DE PAGINA */
+.piedepagina{
+	background: #336ca5; 
+	color: #fbfbfc;
+	text-align: center;
+	padding: 1px;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.piedepagina p {
+	background: #336ca5; 
+
+}
