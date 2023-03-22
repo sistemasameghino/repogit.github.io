@@ -1,22 +1,32 @@
+const openEls = document.querySelectorAll("[data-open]");
+const closeEls = document.querySelectorAll("[data-close]");
+const isVisible = "is-visible";
 
-document.getElementById('educacion').addEventListener('click', function () {
-    document.getElementById('sdatos').style.color = '#000308';
-    document.getElementById('sperfil').style.color = '#000308';
-    document.getElementById('sexperiencia').style.color = '#000308';
-    document.getElementById('seducacion').style.color = '#F69F2C';
+for (const el of openEls) {
+  el.addEventListener("click", function() {
+    const modalId = this.dataset.open;
+    document.getElementById(modalId).classList.add(isVisible);
+  });
+}
+
+for (const el of closeEls) {
+  el.addEventListener("click", function() {
+    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
+
+document.addEventListener("click", e => {
+  if (e.target == document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
 });
-document.getElementById('perfil').addEventListener('click', function () {
-    document.getElementById('sdatos').style.color = '#000308';
-    document.getElementById('sexperiencia').style.color = '#000308';
-    document.getElementById('seducacion').style.color = '#000308';
-    document.getElementById('sperfil').style.color = '#F69F2C';
+
+document.addEventListener("keyup", e => {
+  // if we press the ESC
+  if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
 });
-document.getElementById('datos').addEventListener('click', function () {
-    document.getElementsByClassName('iconos').style.color ='#F69F2C' ;
-});
-document.getElementById('experiencia').addEventListener('click', function () {
-    document.getElementById('sdatos').style.color = '#000308';
-    document.getElementById('sperfil').style.color = '#000308';
-    document.getElementById('seducacion').style.color = '#000308';
-    document.getElementById('sexperiencia').style.color = '#F69F2C';
-});
+
+
+Resources
